@@ -1,0 +1,174 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='ban'>
+    个人信息
+  </view>
+  <view class='name'>
+    姓名：
+    <input name='name' value='{{info.name}}'></input>
+  </view>
+
+
+  <view class="section">
+    <picker mode="selector" value="{{sex}}"  bindchange="sexs" range="{{sexs}}">
+      <view class='name'>
+        <view class="picker">
+          <view class="section__title">性别: {{sexs[index]}}</view>
+        </view>
+      </view>
+    </picker>
+  </view>
+
+
+  <view class="section">
+    <picker mode="date" value="{{birddate}}" start="1950-09-01" end="2017-09-01" bindchange="bindDateChange">
+      <view class='name'>
+        <view class="picker">
+          <view class="section__title">出生日期: {{birddate}}</view>
+        </view>
+      </view>
+    </picker>
+  </view>
+
+
+  <view class='name'>
+    手机号码：
+    <input name='tel' value='{{info.tel}}'></input>
+  </view>
+  <view class='name'>
+    居住地址：
+    <input name='add' value='{{info.add}}'></input>
+  </view>
+  <view class='name'>
+    工作年限：
+    <input name='jobtime' value='{{info.jobtime}}'></input>
+  </view>
+  <view class='name'>
+    邮箱地址：
+    <input name='email' value='{{info.email}}'></input>
+  </view>
+
+  <view class='ban'>
+    求职意向
+  </view>
+  <view class='name'>
+    工作职位：
+    <input name='jobfor'  value='{{info.jobfor}}' ></input>
+  </view>
+  <view class='name'>
+    工作地点：
+    <input name='jobadd' value='{{info.jobadd}}'></input>
+  </view>
+  <view class='name'>
+    期望薪资：
+    <input name='jobpri' value='{{info.jobpri}}' ></input>
+  </view>
+  <view class='name'>
+    行业类别：
+    <input name='jobhan' value='{{info.jobhan}}' ></input>
+  </view>
+  <view class='name'>
+    工作状态：
+    <input name='sta' value='{{info.sta}}' ></input>
+  </view>
+
+
+
+  <view class='ban'>
+    教育背景
+  </view>
+  <view class='name'>
+    学历/学位：
+    <input name='study' value='{{info.study}}'></input>
+  </view>
+  <view class='name'>
+    学校名称：
+    <input name='school' value='{{info.school}}'></input>
+  </view>
+  <view class='name'>
+    专业名称：
+    <input name='pro' value='{{info.pro}}'></input>
+  </view>
+  <view class="section">
+    <picker mode="date" value="{{startstudy}}" start="1980-09-01" end="2018-09-01" bindchange="startstudy">
+      <view class='name'>
+        <view class="picker">
+          <view class="section__title">入学时间: {{startstudy}}</view>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class="section">
+    <picker mode="date" value="{{endstudy}}" start="1980-09-01" end="2017-09-01" bindchange="endstudy">
+      <view class='name'>
+        <view class="picker">
+          <view class="section__title">毕业时间: {{endstudy}}</view>
+        </view>
+      </view>
+    </picker>
+  </view>
+
+  <view class='ban'>
+    工作经验
+  </view>
+  <view class='name'>
+    公司名称：
+    <input name='company' value='{{info.company}}'></input>
+  </view>
+  <view class="section">
+    <picker mode="date" value="{{startjob}}" start="1980-09-01" end="2018-09-01" bindchange="startjob">
+      <view class='name'>
+        <view class="picker">
+          <view class="section__title">开始时间: {{startjob}}</view>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class="section">
+    <picker mode="date" value="{{endjob}}" start="1980-09-01" end="2018-09-01" bindchange="endjob">
+      <view class='name'>
+        <view class="picker">
+          <view class="section__title">开始时间: {{endjob}}</view>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class='name'>
+    职位名称：
+    <input name='comjob' value='{{info.comjob}}'></input>
+  </view>
+  <view class='name'>
+    行业类别：
+    <input name='comhan' value='{{info.comhan}}'></input>
+  </view>
+  <view class='name'>
+    职位薪资：
+    <input name='compri' value='{{info.compri}}'></input>
+  </view>
+  <view class='name'>
+    工作描述：
+    <input name='comdes' value='{{info.comdes}}'></input>
+  </view>
+
+  <view class='ban' >
+    自我评价
+  </view>
+  <view class='name'>
+
+    <view class="section">
+      <textarea name='des' value='{{info.des}}' bindblur="bindTextAreaBlur" placeholder="自我评价：" />
+    </view>
+  </view>
+
+  <view class='share'>
+    <view>
+      <button formType="submit">
+        保存简历
+      </button>
+    </view>
+  </view>
+</form>
+
+
+<view class=" {{dis==1?'err':'none'}}">
+  {{err}}
+</view>

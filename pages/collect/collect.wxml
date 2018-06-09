@@ -1,0 +1,19 @@
+<view bindlongtap="longTap" bindtouchstart="" bindtouchend="touchEnd" wx:for="{{coll_arr}}" wx:for-item="j" id="{{j.id}}">
+  <view class='col-1'>
+    <view>{{j.name}}</view>
+    <view>{{j.time}}</view>
+  </view>
+
+  <view class='col-2'>
+    <view>{{j.company_name}}</view>
+    <view>{{j.money}}千/月</view>
+  </view>
+
+  <view class='col-3'>
+    <view>{{j.company_industry}}</view>
+    <view>{{j.education}}</view>
+    <view>{{j.qualifications}}</view>
+    <view>{{j.area}}</view>
+  </view>
+  <view class='line'></view>
+</view>

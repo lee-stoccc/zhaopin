@@ -1,0 +1,68 @@
+.ban{
+  
+width: 100%;
+background-color: #00b4d4;
+height: 70rpx;
+color: #fcfcfc;
+padding-left: 20rpx;
+font-size: 34rpx;
+line-height: 70rpx;
+
+}
+
+.name{
+ line-height: 100rpx;
+  padding-left: 40rpx;
+  border-bottom: 1rpx #eee solid;
+  display: flex;
+  color: #505050
+}
+.name input{
+  height: 100rpx;
+  flex-grow: 1;
+  padding-right: 30rpx
+}
+
+.share{
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  font-size: 30rpx;
+}
+.share view{
+  flex-grow: 1;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 16rpx; 
+}
+.share view:nth-child(2) button{
+  font-size: 30rpx;
+  background-color: #00d464;
+  color: #fff;
+ width: 50%;
+}
+.share view:nth-child(1) button{
+  font-size: 30rpx;
+  background-color: #00d464;
+  color: #fff;
+ width: 50%;
+}
+
+.err{
+  position:fixed;
+  top: 30%;
+  width: 80%;
+  left: 10%;
+  text-align: center;
+  background-color: #f48479;
+  opacity: 0.8;
+  border-radius: 8px;
+  color: #eee;
+  height: 80rpx;
+  line-height: 80rpx
+}
+
+.none{
+  display: none
+}

@@ -1,0 +1,194 @@
+.top {
+  display: flex;
+  justify-content: flex-start;
+  line-height: 70rpx;
+}
+
+.top view:nth-child(2) {
+  line-height: 70rpx;
+  height: 70rpx;
+  margin-right: 20rpx;
+  margin-top: 6rpx;
+}
+
+.top image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.top-r input {
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  text-align: left;
+  font-size: 34rpx;
+}
+
+.top-l {
+  margin-left: 40rpx;
+  margin-right: 30rpx;
+}
+
+.top-r {
+  flex-grow: 1;
+}
+
+.container {
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.address {
+  display: flex;
+  padding-top: 18rpx;
+  padding-bottom: 18rpx;
+  color: #505050;
+}
+
+.cho {
+  display: flex;
+  line-height: 70rpx;
+  background-color: #f7f7f7;
+  color: #505050;
+}
+
+.cho-0 {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+}
+
+.cho-0 image {
+  width: 20rpx;
+  height: 20rpx;
+  padding-bottom: 2rpx;
+}
+
+.cho-0 view:nth-child(2) {
+  text-align: center;
+}
+
+.cho-1 {
+  width: 33.33%;
+  text-align: center;
+}
+
+.cho-2 {
+  width: 33.33%;
+  text-align: center;
+}
+
+.chocolor {
+  color: white;
+  background-color: #00b4d4;
+}
+
+.job-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+
+.job-1 .name {
+  margin-left: 40rpx;
+  color: #505050;
+}
+
+.job-1 .price {
+  margin-right: 40rpx;
+  color: #ff1414;
+}
+
+.job-2 {
+  display: flex;
+  font-size: 28rpx;
+  color: #6b6b6b;
+  margin-left: 40rpx;
+}
+
+.job-2 view {
+  margin: 14rpx;
+  margin-bottom: 6rpx;
+  margin-left: 0;
+}
+
+.job-3 view {
+  margin-top: 0;
+}
+
+.five {
+  background-color: #f2ffff;
+  padding: 4rpx;
+}
+
+.job-3-r {
+  flex-grow: 1;
+  text-align: right;
+  padding-right: 20rpx;
+}
+
+.job-4 {
+  display: flex;
+  font-size: 28rpx;
+  color: #494949;
+  align-items: center;
+}
+
+.line {
+  width: 100%;
+  height: 10rpx;
+  background-color: #f7f7f7;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+}
+
+.job-2 image {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+
+/* //轮播图下分类图片 */
+
+.address view view:nth-child(1) image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.address view view:nth-child(1) {
+  text-align: center;
+}
+
+.cho-dis {
+  width: 33.33%;
+  text-align: center;
+}
+
+.cho-dis view {
+  margin-bottom: 10rpx;
+  font-size: 34rpx;
+  margin-top: 20rpx;
+}
+
+.dis{
+  display: none;
+}
+
+.dis2{
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  background-color: #fff
+}
+scroll-view{
+  display: flex;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx
+
+}
+.scroll-view-item_H{
+  display: flex
+}

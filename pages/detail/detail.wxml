@@ -1,0 +1,83 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='title'>{{detail.name}}</view>
+
+<view class='price'>{{detail.money}}元/月</view>
+
+<view class='condition'>
+
+  <view><image src='/assets/imgs/loca2.jpg' class='dis-img0'></image></view>
+  <view>{{detail.area}}</view>
+  <view><image src='/assets/imgs/sign.png' class='dis-img0'></image></view>
+  <view>{{detail.qualifications}}</view>
+  <view><image src='/assets/imgs/stu.png' class='dis-img0'></image></view>
+  <view>{{detail.education}}</view>
+</view>
+
+<view class='line'></view>
+<view class='detail'>
+  <view wx:for="{{detail.treatment}}">
+  {{item}}</view>
+</view>
+
+<view class='line2'></view>
+
+<view class='company'>
+  <view>
+    <image src="{{detail.company_logo}}"></image>
+  </view>
+  <view>
+    <view>{{detail.company_name}}</view>
+    <view class='other'>
+      <view>{{detail.company_scale}}</view>
+      <view>{{detail.company_industry}}</view>
+    </view>
+  </view>
+</view>
+
+<view class='des'>
+  <view>职位描述</view>
+  <view>招聘中</view>
+</view>
+
+<view class='des-detail'>
+  <view>职位描述/要求:</view>
+  <template is="wxParse" data="{{wxParseData:name_describe.nodes}}"/>
+  
+</view>
+
+<view class='des des2'>
+  <view>工作地点</view>
+</view>
+
+<view class='dis'>
+  <view>
+    <image src='/assets/imgs/loca2.jpg' class='dis-img1'></image>
+  </view>
+  <view class='add'>{{detail.address}}</view>
+  <view bindtap='gohere'>
+    <view>
+      <image src='/assets/imgs/loca.jpg' class='dis-img2'></image>
+    </view>
+    <view class='kilo'>{{count}}</view>
+  </view>
+</view>
+
+<view class='share'>
+  <view class='coll' >
+    <!-- <view class='coll-1'>
+      <view>
+        <image src='/assets/imgs/coll.png'></image>
+      </view>
+      <view>收藏</view>
+    </view> -->
+    <view class='coll-2' bindtap='collection_add'>
+      <view>
+        <image src='/assets/imgs/share.jpg'></image>
+      </view>
+      <view>收藏</view>
+    </view>
+  </view>
+  <view class='share-r' bindtap='sent'>投递简历</view>
+</view>
+
+<view class="{{isshow==1?'show':'diss'}}">{{sumsg}}</view>

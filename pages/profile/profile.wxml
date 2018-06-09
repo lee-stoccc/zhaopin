@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+
+<view class='page'>
+  <view class="page-bd">
+    <view class="ul">
+      <view class="li fz-16" >
+        <navigator url="/pages/resume/resume" hover-class="none">
+          <image src="/assets/imgs/cv.png" mode="widthFix"></image><span>我的简历</span>
+        </navigator>
+      </view>
+      <view class="li fz-16">
+        <navigator url="/pages/sign/sign" hover-class="none">
+          <image src="/assets/imgs/sign.png" mode="widthFix"></image><span>我的投递</span>
+        </navigator>
+      </view>
+      <view class="li fz-16" bindtap='collection_info'>
+        <navigator url="/pages/collect/collect" hover-class="none">
+          <image src="/assets/imgs/coll.png" mode="widthFix"></image><span>我的收藏</span>
+        </navigator>
+      </view>
+       <!-- <view class="li fz-16">
+        <navigator url="../shop/shopOrder/shopOrder" hover-class="none">
+          <image src="/assets/imgs/config.png" mode="widthFix"></image><span>设置</span>
+        </navigator>
+      </view>  -->
+    </view>
+  </view>
+</view>

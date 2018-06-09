@@ -1,0 +1,72 @@
+<view class='style'>
+  <!-- <view class="{{type==1? 'chocolor':''}}" data-type='1' bindtap='ch_type'>已查阅</view> -->
+  <view class="{{type==2? 'chocolor':''}}"  data-type='2'  bindtap='ch_type'>已送达</view>
+  <!-- <view  class="{{type==3? 'chocolor':''}}"  data-type='3'  bindtap='ch_type'>感兴趣</view> -->
+</view>
+
+
+
+<!-- <view class='list'  data-type='1' bindtap='ch_type' style="{{type==1? '':'display:none'}}">
+  <view class='dietal'>
+    <view class='d-1'>
+      <view>UI设计师</view>
+      <view>5-7千/月</view>
+    </view>
+    <view class='d-2'>
+      <view>广州科技信息贸易有限公司</view>
+      <view>广州-天河</view>
+    </view>
+
+    <view class='d-3'>
+      <view>民营企业</view>
+      <view>大专</view>
+      <view>1-3年</view>
+      <view>申请时间:2018-5-10</view>
+    </view>
+  </view>
+  <view class='line'></view>
+</view> -->
+
+
+<view class='list' data-type='2' bindtap='ch_type' style="{{type==2?'':'display:none'}}" bindlongtap="longTap" bindtouchstart="" bindtouchend="touchEnd" wx:for="{{deli_arr}}" wx:for-item="j" id="{{j.id}}">
+  <view class='dietal'>
+    <view class='d-1'>
+      <view>{{j.name}}</view>
+      <view>{{j.money}}千/月</view>
+    </view>
+    <view class='d-2'>
+      <view>{{j.company_name}}</view>
+      <view>{{j.area}}</view>
+    </view>
+
+    <view class='d-3'  >
+      <view>{{j.company_industry}}</view>
+      <view>{{j.education}}</view>
+      <view>{{j.qualifications}}</view>
+      <view>申请时间：{{j.time}}</view>
+    </view>
+  </view>
+  <view class='line'></view>
+</view>
+
+<!-- 
+<view class='list'  data-type='3' bindtap='ch_type' style="{{type==3?'':'display:none'}}">
+  <view class='dietal'>
+    <view class='d-1'>
+      <view>兴趣设计师</view>
+      <view>5-7千/月</view>
+    </view>
+    <view class='d-2'>
+      <view>广州科技信息贸易有限公司</view>
+      <view>广州-天河</view>
+    </view>
+
+    <view class='d-3'>
+      <view>民营企业</view>
+      <view>大专</view>
+      <view>1-3年</view>
+      <view>申请时间:2018-5-10</view>
+    </view>
+  </view>
+  <view class='line'></view>
+</view> -->
